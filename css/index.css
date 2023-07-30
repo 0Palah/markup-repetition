@@ -1,0 +1,101 @@
+/* Using a sans serif font and increasing the size of the characters */
+:root {
+  --brand-color: green;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: brown;
+  background-color: #dbd1d1;
+}
+
+#item5 {
+  color: blue;
+}
+/* Shift the heading text to the left, by default it is centered */
+/* table caption {
+        text-align: left;
+      } */
+
+/* We "collapse" the frames of adjacent cells */
+/* table {
+        border-collapse: collapse;
+      } */
+
+/* 
+  Add a border and padding to the cells, the distance from the content to the border.
+  To control the vertical position, the caption-side property is used. */
+
+a:hover,
+a:focus {
+  color: blueviolet;
+}
+
+a:active {
+  color: red;
+}
+
+a:visited {
+  color: yellowgreen;
+}
+
+table th,
+table td {
+  color: var(--brand-color, blue);
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+}
+
+.thead-th:hover {
+  background-color: aquamarine;
+}
+
+.schedule-body > tr:hover {
+  background-color: tomato;
+  color: white;
+}
+
+/* Оформлення таблиці */
+.schedule {
+  --brand-color: tomato;
+  border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+  color: var(--brand-color);
+  padding: 8px;
+  border: 1px solid var(--brand-color);
+}
+.post {
+  color: inherit;
+  color: var(--brand-color, blue);
+}
+
+.post-title {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  font-size: 30px;
+  font-style: italic;
+  text-indent: 50px;
+  /* text-align: justify; */
+  /* letter-spacing: 10px; */
+  /* word-spacing: 2px; */
+  /* text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000; */
+}
+
+.align-justify::first-letter {
+  color: red;
+}
+
+.align-justify::selection {
+  color: red;
+  background-color: ;
+}
